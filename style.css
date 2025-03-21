@@ -1,0 +1,113 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #333;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 15px 0;
+    transition: background-color 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #007BFF;
+}
+
+/* Change navbar style when scrolled */
+nav.scrolled {
+    background-color: #007BFF;
+}
+
+/* Hero Section */
+.main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 80px;
+    background: url('background.jpg') no-repeat center center/cover;
+    color: white;
+}
+
+.main h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.main p {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+/* Button */
+.btn {
+    background-color: #007BFF;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Additional Content Section */
+.content {
+    padding: 50px 10%;
+    background-color: #f4f4f4;
+}
+
+.content h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
